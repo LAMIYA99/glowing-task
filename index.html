@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="./node_modules/remixicon/fonts/remixicon.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+
+  <header class="py-5">
+    <nav class="container max-w-[1860px] px-[1.875rem] mx-auto">
+      <div class="flex items-center justify-between">
+        <div class="left w-[50%]">
+          <ul class="items-center flex text-[14px] leading-[25px] tracking-[1.4px] font-semibold gap-[35px]">
+            <li>HOME <i class="ri-arrow-down-s-line"></i></li>
+            <li>SHOP <i class="ri-arrow-down-s-line"></i></li>
+            <li>PRODUCT <i class="ri-arrow-down-s-line"></i></li>
+            <li>PAGES <i class="ri-arrow-down-s-line"></i></li>
+            <li>BLOG <i class="ri-arrow-down-s-line"></i></li>
+          </ul>
+        </div>
+        <div class="center">
+          <img src="https://glowing-theme.myshopify.com/cdn/shop/files/logo-dark.png?v=1736504155" alt=""
+            class="max-w-[190px] py-[20px] h-auto object-contain" />
+        </div>
+        <div class="right w-[50%] flex items-end justify-end">
+          <ul class="text-black flex items-center gap-[24px]">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-[28px] h-[28px] stroke-black stroke-0 fill-black"
+                viewBox="0 0 28 32">
+                <path
+                  d="M28.529 27.47l-5.566-5.566c1.731-1.97 2.787-4.57 2.787-7.417 0-6.221-5.043-11.264-11.264-11.264s-11.264 5.043-11.264 11.264c0 6.221 5.043 11.264 11.264 11.264 2.846 0 5.446-1.056 7.429-2.797l-0.013 0.011 5.566 5.566c0.136 0.136 0.323 0.22 0.53 0.22 0.414 0 0.75-0.336 0.75-0.75 0-0.207-0.084-0.395-0.22-0.53v0zM4.75 14.5c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75c0 5.385-4.365 9.75-9.75 9.75v0c-5.382-0.006-9.744-4.368-9.75-9.749v-0.001z">
+                </path>
+              </svg>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-[28px] h-[28px] stroke-black stroke-0 fill-black"
+                viewBox="0 0 32 32">
+                <path
+                  d="M28.776 26.623c-1.94-3.298-5.031-5.742-8.709-6.8l-0.105-0.026c2.864-1.477 4.788-4.415 4.788-7.802 0-4.832-3.918-8.75-8.75-8.75s-8.75 3.918-8.75 8.75c0 3.387 1.924 6.324 4.739 7.779l0.049 0.023c-3.783 1.083-6.874 3.528-8.776 6.756l-0.038 0.069c-0.063 0.108-0.101 0.237-0.101 0.376 0 0.414 0.336 0.75 0.75 0.75 0.276 0 0.517-0.149 0.647-0.371l0.002-0.004c2.335-3.988 6.598-6.624 11.477-6.624s9.143 2.636 11.443 6.562l0.034 0.063c0.132 0.225 0.373 0.374 0.649 0.374 0.414 0 0.75-0.336 0.75-0.75 0-0.138-0.037-0.268-0.103-0.379l0.002 0.004zM8.75 12c0-4.004 3.246-7.25 7.25-7.25s7.25 3.246 7.25 7.25c0 4.004-3.246 7.25-7.25 7.25v0c-4.002-0.005-7.245-3.248-7.25-7.25v-0z">
+                </path>
+              </svg>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-[28px] h-[28px] stroke-black stroke-0 fill-black"
+                viewBox="0 0 576 512">
+                <path
+                  d="M287.9 435.9L150.1 509.1C142.9 513.4 133.1 512.7 125.6 507.4C118.2 502.1 114.5 492.9 115.1 483.9L142.2 328.4L31.11 218.2C24.65 211.9 22.36 202.4 25.2 193.7C28.03 185.1 35.5 178.8 44.49 177.5L197.7 154.8L266.3 13.52C270.4 5.249 278.7 0 287.9 0C297.1 0 305.5 5.25 309.5 13.52L378.1 154.8L531.4 177.5C540.4 178.8 547.8 185.1 550.7 193.7C553.5 202.4 551.2 211.9 544.8 218.2L433.6 328.4L459.9 483.9C461.4 492.9 457.7 502.1 450.2 507.4C442.8 512.7 432.1 513.4 424.9 509.1L287.9 435.9zM226.5 168.8C221.9 178.3 212.9 184.9 202.4 186.5L64.99 206.8L164.8 305.6C172.1 312.9 175.5 323.4 173.8 333.7L150.2 473.2L272.8 407.7C282.3 402.6 293.6 402.6 303 407.7L425.6 473.2L402.1 333.7C400.3 323.4 403.7 312.9 411.1 305.6L510.9 206.8L373.4 186.5C362.1 184.9 353.1 178.3 349.3 168.8L287.9 42.32L226.5 168.8z">
+                </path>
+              </svg>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-[28px] h-[28px] stroke-black stroke-0 fill-black"
+                viewBox="0 0 32 32">
+                <path
+                  d="M27 5.25h-22c-0.966 0.001-1.749 0.784-1.75 1.75v18c0.001 0.966 0.784 1.749 1.75 1.75h22c0.966-0.001 1.749-0.784 1.75-1.75v-18c-0.001-0.966-0.784-1.749-1.75-1.75h-0zM5 6.75h22c0.138 0 0.25 0.112 0.25 0.25v2.25h-22.5v-2.25c0-0.138 0.112-0.25 0.25-0.25h0zM27 25.25h-22c-0.138-0-0.25-0.112-0.25-0.25v-14.25h22.5v14.25c-0 0.138-0.112 0.25-0.25 0.25h-0zM21.75 14c0 3.176-2.574 5.75-5.75 5.75s-5.75-2.574-5.75-5.75v0c0-0.414 0.336-0.75 0.75-0.75s0.75 0.336 0.75 0.75v0c0 2.347 1.903 4.25 4.25 4.25s4.25-1.903 4.25-4.25v0c0-0.414 0.336-0.75 0.75-0.75s0.75 0.336 0.75 0.75v0z">
+                </path>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <section id="hero">
+    <div class="swiper mySwiper min-h-[770px]">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="first min-h-[770px] w-full py-[100px]" style="
+              background-image: url(https://glowing-theme.myshopify.com/cdn/shop/files/hero-slider-03.webp?v=1742526402);
+            ">
+            <div class="container max-w-[1440px] mx-auto px-[1.875rem]">
+              <div class="content flex flex-col items-start justify-start mt-[80px]">
+                <p class="text-[15px] font-semibold mb-[25px] tracking-[1.5px] uppercase">
+                  NEW COLLECTION
+                </p>
+                <h2 class="text-[56px] leading-[1.3] font-semibold w-[500px] mb-[12px] text-left">
+                  Get The Perfectly Hydrated Skin
+                </h2>
+                <h3 class="text-[18px] text-[#8C8C8C] w-[450px] text-left">
+                  Made using clean, non-toxic ingredients, our products are
+                  designed for everyone.
+                </h3>
+                <button class="mt-[35px] bg-black text-white py-3 px-7 rounded-[4px] font-medium">
+                  Shop Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="first min-h-[770px] w-full py-[100px]" style="
+              background-image: url(https://glowing-theme.myshopify.com/cdn/shop/files/hero-slider-01.webp?v=1742526402);
+            ">
+            <div class="container max-w-[1440px] mx-auto px-[1.875rem]">
+              <div class="content flex flex-col items-start justify-start mt-[80px]">
+                <p class="text-[15px] font-semibold mb-[25px] tracking-[1.5px] uppercase">
+                  NEW COLLECTION
+                </p>
+                <h2 class="text-[56px] leading-[1.3] font-semibold w-[500px] mb-[12px] text-left">
+                  Get The Perfectly Hydrated Skin
+                </h2>
+                <h3 class="text-[18px] text-[#8C8C8C] w-[450px] text-left">
+                  Made using clean, non-toxic ingredients, our products are
+                  designed for everyone.
+                </h3>
+                <button class="mt-[35px] bg-black text-white py-3 px-7 rounded-[4px] font-medium">
+                  Shop Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="first min-h-[770px] w-full py-[100px]" style="
+              background-image: url(https://glowing-theme.myshopify.com/cdn/shop/files/hero-slider-02.webp?v=1742526402);
+            ">
+            <div class="container max-w-[1440px] mx-auto px-[1.875rem]">
+              <div class="content flex flex-col items-start justify-start mt-[80px]">
+                <p class="text-[15px] font-semibold mb-[25px] tracking-[1.5px] uppercase">
+                  NEW COLLECTION
+                </p>
+                <h2 class="text-[56px] leading-[1.3] font-semibold w-[500px] mb-[12px] text-left">
+                  Get The Perfectly Hydrated Skin
+                </h2>
+                <h3 class="text-[18px] text-[#8C8C8C] w-[450px] text-left">
+                  Made using clean, non-toxic ingredients, our products are
+                  designed for everyone.
+                </h3>
+                <button class="mt-[35px] bg-black text-white py-3 px-7 rounded-[4px] font-medium">
+                  Shop Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+
+  <section class="mero">
+    <div class="container py-20 mx-auto max-w-[1440px] px-[1.875rem]">
+      <div class="flex flex-col items-center">
+        <h3 class="text-[40px] text-[#000000] font-medium">Our Featured Products</h3>
+        <h2 class="text-[18px] text-[#7e7e7e] mt-2">Get the skin you want to feel</h2>
+      </div>
+
+      <div class="swiper product-slider">
+        <div class="swiper-wrapper py-14" id="sliderContent"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="container mx-auto max-w-[1440px] px-[1.875rem]">
+    <div class="NewCollections grid grid-cols-2 gap-[30px] mb-10">
+
+      <div class="group relative h-[407px] overflow-hidden">
+
+        <div
+          class="absolute inset-0 bg-no-repeat bg-center bg-cover transition-transform duration-400 ease-out group-hover:scale-105"
+          style="background-image: url(https://glowing-theme.myshopify.com/cdn/shop/files/banner-01.jpg?v=1736504079);">
+        </div>
+
+        <div class="relative z-10 p-[44px]">
+          <h2 class="tracking-[1.5px] font-semibold text-[15px]">NEW COLLECTION</h2>
+          <h3 class="mt-[15px] text-[34px] font-semibold">
+            Intensive Glow C+ <br /> Serum
+          </h3>
+          <button
+            class="px-[33.04px] py-[10.208px] text-[16px] leading-[1.6] font-semibold bg-white hover:bg-[#4e7661] rounded-[3px] duration-400 cursor-pointer hover:text-white mt-[28px]">
+            Explore More
+          </button>
+        </div>
+      </div>
+
+      <div class="group relative h-[407px] overflow-hidden">
+
+        <div
+          class="absolute inset-0 bg-no-repeat bg-center bg-cover transition-transform duration-400 ease-out group-hover:scale-105"
+          style="background-image: url(https://glowing-theme.myshopify.com/cdn/shop/files/banner-02.jpg?v=1736504079);">
+        </div>
+
+
+        <div class="relative z-10 p-[44px]">
+          <h3 class="text-[34px] font-semibold">25% off Everything</h3>
+          <h4 class="mt-[10px] text-[18px]">
+            Makeup with extended range in <br /> colors for every human.
+          </h4>
+          <button
+            class="px-[33.04px] py-[10.208px] text-[16px] leading-[1.6] font-semibold bg-white hover:bg-[#4e7661] rounded-[3px] duration-400 cursor-pointer hover:text-white mt-[28px]">
+            Shop Sale
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <section class="container mx-auto max-w-[1440px] px-[1.875rem]">
+    <div class="services py-10">
+      <div class="grid grid-cols-4 md:grid-cols-4 sm:grid-cols-1 gap-4">
+        <div class="card flex items-center justify-center flex-col text-center">
+          <img src="https://cdn.shopify.com/s/files/1/0664/1188/8925/files/icon-box-01.svg?v=1728468602" alt=""
+            class="max-w-[70px] h-auto object-contain mb-[20px]" />
+          <h3 class="text-[20px] font-semibold">Free Shipping</h3>
+          <p class="text-[18px] font-medium mt-[12px] text-[#848484]">
+            Free Shipping for orders over $130
+          </p>
+        </div>
+  
+        <div class="card flex items-center justify-center flex-col text-center">
+          <img src="https://cdn.shopify.com/s/files/1/0664/1188/8925/files/icon-box-02.svg?v=1728963827" alt=""
+            class="max-w-[70px] h-auto object-contain mb-[20px]" />
+          <h3 class="text-[20px] font-semibold">Returns</h3>
+          <p class="text-[18px] font-medium mt-[12px] text-[#848484]">
+            Within 30 days for an exchange.
+          </p>
+        </div>
+  
+        <div class="card flex items-center justify-center flex-col text-center">
+          <img src="https://cdn.shopify.com/s/files/1/0664/1188/8925/files/icon-box-03.svg?v=1728963827" alt=""
+            class="max-w-[70px] h-auto object-contain mb-[20px]" />
+          <h3 class="text-[20px] font-semibold">Online Support</h3>
+          <p class="text-[18px] font-medium mt-[12px] text-[#848484]">
+            24 hours a day, 7 days a week
+          </p>
+        </div>
+  
+        <div class="card flex items-center justify-center flex-col text-center">
+          <img src="https://cdn.shopify.com/s/files/1/0664/1188/8925/files/icon-box-04.svg?v=1728963827" alt=""
+            class="max-w-[70px] h-auto object-contain mb-[20px]" />
+          <h3 class="text-[20px] font-semibold">Flexible Payment</h3>
+          <p class="text-[18px] font-medium mt-[12px] text-[#848484]">
+            Pay with Multiple Credit Cards
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <section class="bg-[#EDF1F0] mt-14 p-20">
+    <h1 class="text-[40px] text-[#000000] font-semibold text-center">As seen in</h1>
+    <div class="grid grid-cols-1 md:grid-cols-3 md:gap-10 container p-8 mx-auto max-w-[1440px] px-[1.875rem] gap-6">
+      <div class="cards flex items-center flex-col gap-4 justify-center">
+        <img src="https://glowing-theme.myshopify.com/cdn/shop/files/featured-box-03.png?v=1736504078" alt="">
+        <h3 class="text-[20px] text-[#000000] font-semibold text-center">“ Also the customer service is phenomenal. I would purchase again.”</h3>
+      </div>
+      <div class="cards flex items-center flex-col gap-4 justify-center">
+        <img src="https://glowing-theme.myshopify.com/cdn/shop/files/featured-box-02.png?v=1736504079" alt="">
+        <h3 class="text-[20px] text-[#000000] font-semibold text-center">“Great product line. Very attentive staff to deal with.”</h3>
+      </div>
+      <div class="cards flex items-center flex-col gap-4 justify-center">
+        <img src="https://glowing-theme.myshopify.com/cdn/shop/files/featured-box-01.png?v=1736504079" alt="">
+        <h3 class="text-[20px] text-[#000000] font-semibold text-center">"Are you looking to upgrade your beauty at an affordable price? Look no further than <br> e.Space"</h3>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+  <section class="mero">
+    <div class="container py-20 mx-auto max-w-[1440px] px-[1.875rem]">
+      <div class="flex flex-col items-center">
+        <h3 class="text-[40px] text-[#000000] font-medium">Customer favorite beauty essentials</h3>
+        <h2 class="text-[18px] text-[#7e7e7e] text-center mt-2">Made using clean, non-toxic ingredients, our products
+          are <br> designed
+          for everyone.</h2>
+      </div>
+
+      <div class="grid grid-cols-12 mt-12 gap-8">
+        <div class="col-span-5">
+          <div class="group overflow-hidden relative h-[800px]">
+            <div
+              class="absolute inset-0 bg-no-repeat bg-center bg-cover transition-transform duration-700 ease-out group-hover:scale-110"
+              style="background-image: url(https://glowing-theme.myshopify.com/cdn/shop/files/banner-21.jpg?v=1736504096&width=360);">
+            </div>
+
+
+            <div class="absolute inset-0 pointer-events-none overflow-hidden">
+              <div
+                class="absolute top-0 left-[-100%] h-full w-[100%] bg-gradient-to-r from-transparent via-white/15 to-transparent transform transition-transform duration-700 ease-out group-hover:translate-x-[200%]">
+              </div>
+            </div>
+
+  
+            <div class="relative z-10 flex items-end justify-start p-[50px] h-full">
+              <div class="content">
+                <h2 class="text-[34px] font-semibold text-white">Empower Yourself</h2>
+                <h3 class="text-[15px] mt-[15px] text-white">
+                  Get the skin you want to feel
+                </h3>
+                <button
+                  class="px-[33.04px] py-[10.208px] text-[16px] leading-[1.6] font-semibold bg-white hover:bg-[#4e7661] rounded-[3px] duration-400 cursor-pointer hover:text-white mt-[28px]">
+                  Explore More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-span-7">
+          <div class="swiper productSwiper">
+            <div class="swiper-wrapper py-14" id="productWrapper"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="container mx-auto max-w-[1440px] p-6 sm:p-10 md:p-14 px-[1.875rem]">
+    <div class="flex items-center justify-center flex-col gap-3 text-center">
+      <h2 class="text-[28px] sm:text-[32px] md:text-[40px] text-[#000000] font-semibold">
+        More to Discover
+      </h2>
+      <h3 class="text-[14px] sm:text-[16px] md:text-[18px] text-[#7e7e7e]">
+        Our bundles were designed to conveniently package your tanning
+        <br class="hidden sm:block"> essentials while saving you money.
+      </h3>
+    </div>
+  
+    <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2  gap-6 sm:gap-8 mt-10 md:mt-14">
+ 
+      <div class="group overflow-hidden relative">
+        <div class="overflow-hidden relative">
+          <img src="https://glowing-theme.myshopify.com/cdn/shop/files/image-box-01.jpg?v=1736504121"
+            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="">
+       
+          <div class="absolute inset-0 pointer-events-none overflow-hidden">
+            <div
+              class="absolute top-0 left-[-100%] h-full w-full bg-gradient-to-r from-transparent via-white/20 to-transparent transform transition-transform duration-700 ease-out group-hover:translate-x-[200%]">
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center items-center py-4 gap-2 sm:gap-3">
+          <h2 class="text-[20px] sm:text-[22px] md:text-[24px] font-semibold text-[#000000]">
+            <a href="">Summer Collection</a>
+          </h2>
+          <button class="flex items-center gap-1.5 font-medium text-[0.9rem] sm:text-[1rem] cursor-pointer">
+            Shop Now
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-[14px] sm:h-[16px] w-[14px] sm:w-[16px]">
+              <path
+                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+              </path>
+            </svg>
+          </button>
+        </div>
+      </div>
+  
+      <div class="group overflow-hidden relative">
+        <div class="overflow-hidden relative">
+          <img src="https://glowing-theme.myshopify.com/cdn/shop/files/image-box-02.jpg?v=1736504122"
+            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" alt="">
+    
+          <div class="absolute inset-0 pointer-events-none overflow-hidden">
+            <div
+              class="absolute top-0 left-[-100%] h-full w-full bg-gradient-to-r from-transparent via-white/20 to-transparent transform transition-transform duration-700 ease-out group-hover:translate-x-[200%]">
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center items-center py-4 gap-2 sm:gap-3">
+          <h2 class="text-[20px] sm:text-[22px] md:text-[24px] font-semibold text-[#000000]">
+            <a href="">From Our Blog</a>
+          </h2>
+          <button class="flex items-center gap-1.5 font-medium text-[0.9rem] sm:text-[1rem] cursor-pointer">
+            Read More
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-[14px] sm:h-[16px] w-[14px] sm:w-[16px]">
+              <path
+                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+              </path>
+            </svg>
+          </button>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+  
+  
+
+
+
+  <footer class="bg-[#F8F8F8]">
+    <div
+      class="container mx-auto max-w-[1440px] px-[1.875rem] py-12 grid grid-cols-1 md:grid-cols-4 gap-8 border-b border-gray-200">
+      <div>
+        <h3 class="text-[20px] font-semibold mb-4">Company</h3>
+        <p class="text-[15px] text-[#7E7E7E] mb-4">
+          Find a location nearest <br> you. <a href="#" class="underline">See Our Stores</a>
+        </p>
+        <p class="font-medium text-black mb-1">+391 (0)35 2568 4593</p>
+        <p class="text-[15px] text-[#7E7E7E]">hello@adomain.com</p>
+      </div>
+      <div>
+        <h3 class="text-[20px] font-semibold mb-4">Useful Links</h3>
+        <ul class="flex flex-col gap-4 text-[15px] text-[#7E7E7E]">
+          <li><a href="#" class="hover:underline">New Products</a></li>
+          <li><a href="#" class="hover:underline">Best Sellers</a></li>
+          <li><a href="#" class="hover:underline">Bundle & Save</a></li>
+          <li><a href="#" class="hover:underline">Online Gift Card</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-[20px] font-semibold mb-4">Information</h3>
+        <ul class="flex flex-col gap-4 text-[15px] text-[#7E7E7E]">
+          <li><a href="#" class="hover:underline">Start A Return</a></li>
+          <li><a href="#" class="hover:underline">Contact Us</a></li>
+          <li><a href="#" class="hover:underline">Shipping FAQ</a></li>
+          <li><a href="#" class="hover:underline">Terms & Conditions</a></li>
+          <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-[34px] font-semibold mb-4">Good emails.</h3>
+        <p class="text-[15px] text-[#7E7E7E] mb-4">
+          Enter your email below to be the first to know about new collections and product launches.
+        </p>
+        <form class="flex flex-col sm:flex-row gap-2 sm:gap-0">
+          <input type="email" placeholder="Enter your email address"
+            class="border border-gray-300 px-4 py-3 text-[15px] outline-none focus:border-black w-full sm:w-auto" />
+          <button type="submit"
+            class="bg-black text-white px-4 py-3 text-[15px] w-full sm:w-auto">
+            Subscribe
+          </button>
+        </form>
+        
+      </div>
+    </div>
+    <div
+      class="container mx-auto max-w-[1440px] px-[1.875rem] py-6 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="flex gap-4 justify-center items-center">
+        <p class="text-[15px] text-[#7E7E7E">&copy; Glowing 2025 | Powered by Shopify</p>
+        <div class="flex items-center gap-4 text-black justify-center text-[20px]">
+          <a href="#"><i class="ri-instagram-line"></i></a>
+          <a href="#"><i class="ri-tiktok-line"></i></a>
+          <a href="#"><i class="ri-facebook-circle-line"></i></a>
+          <a href="#"><i class="ri-youtube-line"></i></a>
+        </div>
+      </div>
+      <div class="w-[210px]">
+        <img src="https://glowing-theme.myshopify.com/cdn/shop/files/logo-dark-lg.png?v=1736504155"
+          class="w-[190px] object-cover" alt="">
+      </div>
+      <div class="flex items-center gap-2">
+        <img src="https://download.logo.wine/logo/Visa_Inc./Visa_Inc.-Logo.wine.png" alt="" class="h-10">
+        <img src="https://www.mastercard.com/content/dam/public/mastercardcom/az/az/logos/mastercard-og-image.png"
+          alt="" class="h-10">
+        <img src="https://logowik.com/content/uploads/images/amex-card1708.jpg" alt="" class="h-10">
+        <img src="https://www.svgrepo.com/show/362021/paypal-3.svg" alt="" class="h-10">
+        <img src="https://images.seeklogo.com/logo-png/4/2/discover-logo-png_seeklogo-41874.png" alt="" class="h-10">
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
